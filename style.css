@@ -5,16 +5,19 @@ body{
     background-size: cover;
     background-position: fixed;
     background-color: #2f3640;
+    background-attachment: fixed;
 }
 
 .background_overlay{
-    position: absolute;
-    background-color: black;
-    background-size: cover;
-    width: 100%;
+    position: fixed;
+    width: 100%; 
     height: 100%;
-    opacity: 50%;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    }
 
 .parent{
     width: 100%;
@@ -36,7 +39,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     border: 1px solid gray;
-    margin: auto
+    margin: auto;
 }
 .profile_menu{
     display: grid;
@@ -70,12 +73,11 @@ img[alt=avatar]:hover{
 
     position: relative;
     top: 10px;
-    margin: auto
+    margin: auto;
 }
 .profile_information{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
