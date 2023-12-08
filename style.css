@@ -27,7 +27,7 @@ body{
 }
 .content_profile{
     width: 90%;
-    height: 100%;
+    height: auto;
     position: relative;
     top: 10px;
     bottom: 10px;
@@ -39,6 +39,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     border: 1px solid gray;
+    justify-content: center;
     margin: auto;
 }
 .profile_menu{
@@ -50,6 +51,9 @@ body{
     width: 70%;
     height: auto;
     margin: auto;
+
+    display: grid;
+    justify-content: center;
 }
 img[alt=avatar]{
     border-radius: 50%;
@@ -63,6 +67,11 @@ img[alt=avatar]{
 }
 img[alt=avatar]:hover{
     border-radius: 40%;
+}
+
+.name_profile{
+    font-size: 25px;
+    margin: auto;
 }
 
 .information{
