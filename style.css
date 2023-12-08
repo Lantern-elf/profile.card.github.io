@@ -21,8 +21,9 @@ body{
 
 .parent{
     width: 100%;
-
+    position: absolute;
     display: flex;
+    height: 100vh;
     justify-content: center;
 }
 .content_profile{
@@ -45,30 +46,24 @@ body{
 .profile_menu{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
+    justify-content: center;
 }
 .profile_row{
     position: relative;
     width: 70%;
     height: auto;
     margin: auto;
-
     display: grid;
     justify-content: center;
 }
 img[alt=avatar]{
     border-radius: 50%;
-    width: 80%;
-    padding: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.3s;
+    transition-duration: 0.3s;
     cursor: pointer;
 }
 img[alt=avatar]:hover{
-    border-radius: 40%;
+    border-radius: 45%;
 }
-
 .name_profile{
     font-size: 25px;
     margin: auto;
@@ -83,6 +78,13 @@ img[alt=avatar]:hover{
     position: relative;
     top: 10px;
     margin: auto;
+}
+.close_box{
+    border-color: aliceblue;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 .profile_information{
     padding-left: 20px;
