@@ -82,9 +82,8 @@ img[alt=avatar]:hover{
 .close_box{
     border-color: aliceblue;
     position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+    margin: auto;
+    justify-content: center;
 }
 .profile_information{
     padding-left: 20px;
